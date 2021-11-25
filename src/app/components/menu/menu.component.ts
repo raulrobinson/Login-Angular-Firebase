@@ -35,6 +35,7 @@ export class MenuComponent implements OnInit {
 
 logOut():void{
   this._service.logOut().then(res => {
+    this.logueado = false;
     this._router.navigate(["/"]);
   });
 }
