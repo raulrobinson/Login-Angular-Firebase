@@ -15,10 +15,10 @@ export class PerfilComponent implements OnInit {
   }
 
   ngOnInit(): void {
-  this.usarioLogueado();
+  this.usuarioLogueado();
   }
 
-  usarioLogueado(){
+  usuarioLogueado(){
     this._service.getInfoUsuarioLoggeado().subscribe(res=>{
       if(res != null){
         this.logueado = true;
@@ -31,5 +31,4 @@ export class PerfilComponent implements OnInit {
      
     });
   }
-
 }
