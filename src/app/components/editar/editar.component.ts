@@ -22,8 +22,9 @@ export class EditarComponent implements OnInit {
     var nombre = this.cajanombre.nativeElement.value;
     var foto = this.cajafoto.nativeElement.value;
 
-    this._service.updateUsuario(nombre, foto).then(res=>{
-      this._router.navigate(['/perfil']);
+    this._service.updateUsuario(nombre, foto).then(res => {
+      console.log(res);
+      this._router.navigate(['perfil']);
     });
   }
 }

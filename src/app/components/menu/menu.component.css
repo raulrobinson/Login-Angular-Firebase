@@ -4,3 +4,7 @@
     border: 0ch;
     margin-left: 10px;
 }
+
+.container-fluid{
+    width: 90%;
+}

@@ -8,6 +8,8 @@ import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 import { AngularFireModule } from '@angular/fire/compat';
 import { environment } from 'src/environments/environment';
 
+import { ServiceAuth } from './services/auth.service';
+
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { LogInComponent } from './components/log-in/log-in.component';
@@ -16,9 +18,6 @@ import { RegistroComponent } from './components/registro/registro.component';
 import { PerfilComponent } from './components/perfil/perfil.component';
 import { LogoutComponent } from './components/logout/logout.component';
 import { EditarComponent } from './components/editar/editar.component';
-
-import { ServiceAuth } from './services/auth.service';
-
 
 
 @NgModule({

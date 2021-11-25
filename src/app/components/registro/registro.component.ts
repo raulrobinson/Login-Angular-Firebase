@@ -1,6 +1,5 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { ServiceAuth } from 'src/app/services/auth.service';
-import { Usuario } from 'src/app/models/Usuario';
 import { Router } from '@angular/router';
 
 @Component({

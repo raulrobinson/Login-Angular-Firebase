@@ -1,7 +1,6 @@
 import { Injectable } from "@angular/core";
 import { AngularFireAuth } from "@angular/fire/compat/auth";
 import firebase from "@firebase/app-compat";
-import { Observable } from "rxjs";
 
 
 @Injectable()
@@ -14,6 +13,7 @@ export class ServiceAuth {
             return await this._auth.signInWithEmailAndPassword(email, password);
         }
         catch(error) {
+            alert("No se ha podido hacer el log-in correctamente. Error: " + error)
             console.log("No se ha podido hacer el log-in correctamente. Error: " + error);
             return null;
         }
@@ -24,6 +24,7 @@ export class ServiceAuth {
             return await this._auth.signInWithPopup( new firebase.auth.GoogleAuthProvider());
         }
         catch(error) {
+            alert("No se ha podido hacer el log-in correctamente. Error: " + error)
             console.log("No se ha podido hacer el log-in correctamente. Error: " + error);
             return null;
         }
@@ -34,7 +35,8 @@ export class ServiceAuth {
             return await this._auth.createUserWithEmailAndPassword(email, password);
         }
         catch(error) {
-            console.log("No se ha podido hacer el log-in correctamente. Error: " + error);
+            alert("No se ha podido hacer el registro correctamente. Error: " + error)
+            console.log("No se ha podido hacer el registro correctamente. Error: " + error);
             return null;
         }
       }
