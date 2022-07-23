@@ -1,15 +1,17 @@
-<form #formLogIn="ngForm">
-        <label>Email</label>
-        <input type="email" name="cajamail" #cajamail placeholder="example@example.com" class="form-control">
-        <br/>
-        <label>Contraseña</label>
-        <input type="password" name="cajapassword" #cajapassword placeholder="123456" class="form-control" minlength="6" maxlength="20" pattern="[A-Za-z0-9]{6,20}">
-        <br/>
-        <button class="btn btn-success" (click)="logIn()">
-            Log In
-        </button>
-        &nbsp;
-        <button class="btn btn-danger" (click)="logInGoogle()">
-            Log In con Google
-        </button>
-</form>
+<div class="container-fluid col-6 mt-5">
+  <form #formLogIn="ngForm" class="col-6">
+          <label>Email</label>
+          <input type="email" name="cajamail" #cajamail placeholder="example@correo.com" class="form-control text-center">
+          <br/>
+          <label>Contraseña</label>
+          <input type="password" name="cajapassword" #cajapassword placeholder="******" class="form-control text-center" minlength="6" maxlength="20" pattern="[A-Za-z0-9]{6,20}">
+          <br/>
+          <button class="btn btn-success" (click)="logIn()">
+              Ingresar
+          </button>
+          &nbsp;
+          <button class="btn btn-danger" (click)="logInGoogle()">
+              Ingresar con Google
+          </button>
+  </form>
+</div>

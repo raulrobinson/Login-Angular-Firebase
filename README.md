@@ -1,4 +1,18 @@
-# Proyectotutorial
+# Login Angular - Firebase
+
+> Console Google Firebase 
+
+Generate parameter Auth_ sample.
+
+firebaseConfig : {
+  apiKey: "<API_KEY>",
+  authDomain: "<AUTH_DOMAIN>",
+  databaseURL: "<DATABASE_URL>",
+  projectId: "<ID_PROJECT>",
+  storageBucket: "<STORAGE>",
+  messagingSenderId: "<ID_SENDER>",
+  appId: "<ID_APP>"
+}
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.2.
 

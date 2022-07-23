@@ -1,11 +1,13 @@
-<form #formEditar="ngForm">
-    <label>Nombre</label>
-    <input type="text" name="cajanombre" #cajanombre placeholder="Spiderman" class="form-control">
-    <br/>
-    <label>Foto perfil</label>
-    <input type="text" name="cajafoto" #cajafoto placeholder="direccion_url" class="form-control" pattern="[A-Za-z0-9]">
-    <br/>
-    <button class="btn btn-success" (click)="modificar()">
-        Modificar usuario
-    </button>
-</form>
+<div class="container-fluid col-6 mt-5">
+  <form #formEditar="ngForm" class="col-6">
+      <label>Nombre</label>
+      <input type="text" name="cajanombre" #cajanombre placeholder="Spiderman" class="form-control text-center">
+      <br/>
+      <label>Foto Perfil</label>
+      <input type="text" name="cajafoto" #cajafoto placeholder="direccion_url" class="form-control text-center" pattern="[A-Za-z0-9]">
+      <br/>
+      <button class="btn btn-success" (click)="modificar()">
+          Modificar Usuario
+      </button>
+  </form>
+</div>
